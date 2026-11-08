@@ -39,3 +39,13 @@ on:
   push:
     branches:
       - master
+name: Build android package
+
+on:
+  push:
+    branches:
+      - android-fixes
+  pull_request:
+    branches:
+      - android-fixes
+  workflow_dispatch:
